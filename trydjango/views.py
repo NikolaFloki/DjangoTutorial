@@ -7,7 +7,6 @@ from articles.models import Article
 
 
 def home_view(request, *args, **kwargs):
-    print(id)
     random_id = random.randint(1,4)
     name = "Nikola"
     article_obj = Article.objects.get(id=random_id)
